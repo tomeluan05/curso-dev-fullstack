@@ -1,0 +1,425 @@
+:root{
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --primary-light: #f5eee6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ********** HOME - BANNER **********  */
+
+.home{
+    height: 100vh;
+    background-image: url('/assets/images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.home .header .nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.home .header{
+    padding: 30px 0px 0px 30px;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul li{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover{
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo{
+    margin: 0 30px;
+}
+
+.home .banner{
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    height: 290px;
+    width: 780px;
+    left: 50%;
+    top: 50%;
+    margin-left: -365px;
+    margin-top: -100px;
+}
+
+.home .banner span{
+    display: block;
+}
+
+.home .banner .banner-span-1{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+.home .banner .banner-h1{
+    font-size: 120px;
+}
+
+.home .banner .banner-span-2{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ********** ABOUT ********** */
+.about{
+    background-color: var(--color-primary);
+    padding-bottom: 30px;
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .timing{
+    position: relative;
+    margin-top: -60px;
+    background-image: url('/assets/images/brush-big.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 33%;
+    padding: 20px;
+}
+
+.about .timing .overlay{
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about .timing .icon-cut{
+    width: 50px; 
+}
+
+.about .timing h3{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    font-size: 20px;
+}
+.about .timing .text{
+    margin: 10px 0;
+}
+
+.about .timing .text::after{
+    /* dot char */
+    content: '•';
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after{
+    content: '|';
+}
+
+.about .timing .text h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span{
+    color: #FFF;
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience{
+    width: 66%;
+    color: #FFF;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p{
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/* ********** SERVICES ********** */
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--primary-light);
+}
+
+.services h2{
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .box{
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4{
+ color: var(--color-secondary);
+ margin-top: 30px;
+}
+
+.services .box p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* ********** APOINTMENT ********** */
+
+.appointment{
+    background-color: var(--color-primary);
+    height: 100vh;
+    padding: 100px 0;
+    background-image: url('/assets/images/chair-ic.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+
+.appointment h2{
+    color: var(--primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img{
+    display: block;
+    margin: 0 auto;
+}
+
+.appointment form{
+    margin-top: 80px;
+}
+
+.appointment .personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper{
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+
+.appointment label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--primary-light);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment textarea{
+    height: 110px;
+}
+
+.appointment button{
+    background-color: var(--color-secondary);
+    color: #FFF;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ********** GALLERY ********** */
+
+.gallery{
+    background-color: var(--primary-light);
+    padding: 100px 0;
+}
+
+.gallery h2{
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img{
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery .gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div{
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+/* ********** LOCATION ********** */
+
+.location{
+    padding: 100px 0;
+    background: url('/assets/images/bg-location.jpg');
+    background-size: cover;
+}
+.location .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+
+.location .head .info .text span{
+    display: block;
+    font-size: 14px;
+}
+
+.location .head .info .text span:first-child{
+    color: silver;
+}
+
+.location .head .info .text span:last-child{
+    color: #FFF;
+}
+
+.location .map{
+    width: 100%;
+}
+
+.location .map iframe{
+    width: 100%;
+}
+
+/* ********** FOOTER ********** */
+
+.footer{
+    background-color: #191919;
+    color: #FFF;
+    padding: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
